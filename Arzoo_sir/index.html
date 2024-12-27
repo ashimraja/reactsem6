@@ -1,0 +1,35 @@
+<script>
+    let a=10;
+    let b=20;
+    let c=30;
+    console.log(a+'+'+b+'='+(a+b));
+    console.log(`${a}+${b}=${(a+b)}`);
+    //create a function to find out sum of element of given array
+    function sumOfArray(arr) {
+        let sum =0;
+        // for(let i =0;i<arr.length;i++){
+        //     sum +=arr[i]
+        // }
+        arr.forEach(element=>{
+            sum+=element;
+            
+        })
+        return sum
+    }
+    console.log(sumOfArray([5,2,4,5]) );
+    //create a function to double the value of each element of given array
+    function doubleOfArray(arr){
+        return arr.map((e)=>e*2)
+    }
+    console.log(doubleOfArray([5,2,4,5]));
+    //create function which will double the value of given element of array of elemnt is odd else it ll multiply by 3
+    function doubleOrTriple(arr){
+        return arr.map((e)=>e%2==0?e*2:e*3);
+    }
+    console.log(doubleOrTriple([5,2,4,5]));
+    //create a function which ll create new arr from the given array which ll have only even element
+    function evenElement(arr){
+        
+    }
+    
+</script>
