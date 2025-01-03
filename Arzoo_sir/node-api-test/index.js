@@ -4,5 +4,5 @@ const port=300;
 app.get("/",(req,res)=>res.send('Hello World!'));
 app.get('/uni',(req,res)=>res.send('Rk University'));
 app.get('/uni/school',(req,res)=>res.send('School of Engineering'));
-app.get('/uni/school/student',(req,res)=>res.send('MD Ashim Raja'));
+app.get('/uni/school/student',(req,res)=>res.json({"name":"Ashim","section":"4cec"}));
 app.listen(port,()=>console.log(`Example app listening on port ${port}`));
