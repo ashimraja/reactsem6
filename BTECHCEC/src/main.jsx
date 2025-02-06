@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import SimpleInterest from './lec0402/simpleInterest.jsx'
+import ResumeForm from './lec0602/ResumeForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <SimpleInterest/>
+    <ResumeForm/>
   </StrictMode>
 )
